@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size  : 13px;
+    line-height: 1.8;
+    color      : #222;
+    background : #f8f8f8;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.container {
+    width        : 900px;
+    background   : #fff;
+    margin       : 0 auto;
+    box-shadow   : 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    @media screen and (max-width: 1200px) {
+        width    : calc(100% - 30px);
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1200px;
+    }
+
+    .sendMail-content {
+        padding        : 75px 0;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        @media screen and (max-width: 768px) {
+            flex-direction : column;
+            justify-content: center;
+        }
+
+        .sendMail-form {
+            width       : 50%;
+            overflow    : hidden;
+            margin-left : 75px;
+            padding-left: 34px;
+
+            @media screen and (max-width: 768px) {
+                width        : 100%;
+                margin-left  : 0px;
+                margin-right : 0px;
+                padding-left : 0px;
+                /* box-sizing: border-box; */
+                padding      : 0 30px;
+            }
+
+            .form-title {
+                margin-bottom: 33px;
+                color        : #222;
+                font-size    : 36px;
+                font-weight  : bold;
+            }
+
+            form {
+                width: 100%;
+
+                .form-group {
+                    position     : relative;
+                    margin-bottom: 25px;
+                    overflow     : hidden;
+
+                    .form-input {
+                        position: relative;
+
+                        label {
+                            position : absolute;
+                            left     : 5px;
+                            top      : 50%;
+                            transform: translateY(-50%);
+
+                            i {
+                                display       : inline-block;
+                                font-size     : inherit;
+                                text-rendering: auto;
+                                font-size     : 14px;
+                            }
+                        }
+
+                        input {
+                            width        : 100%;
+                            display      : block;
+                            border       : none;
+                            border-bottom: 1px solid #999;
+                            padding      : 6px 30px;
+                            box-sizing   : border-box;
+                            outline      : none;
+                        }
+                    }
+
+                    .form-valid {
+                        color: red;
+                    }
+
+
+                    textarea {
+                        outline: none;
+                        padding: 10px 20px;
+                    }
+
+                    .form-submit {
+                        display      : inline-block;
+                        background   : #6dabe4;
+                        color        : #fff;
+                        border-bottom: none;
+                        width        : auto;
+                        padding      : 15px 40px;
+                        border-radius: 5px;
+                        margin-top   : 25px;
+                        cursor       : pointer;
+                        outline      : none;
+                        border       : none;
+
+                        &:hover {
+                            background: #4292dc;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .sendMail-image {
+            margin-top: 45px;
+            margin    : 0 55px;
+            width     : 50%;
+            overflow  : hidden;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            img {
+                margin-bottom: 50px;
+                text-align   : center;
+                max-width    : 100%;
+                height       : auto;
+            }
+        }
+    }
+}
+
+.top-pattern {
+    height         : 8px;
+    background     : url(https://sendy.colorlib.com/img/top-pattern2.gif) ; 
+    background-repeat: repeat,
+}
+
+.wrapper {
+    background            : #ffffff;
+    box-shadow           : 0px 16px 46px -22px rgba(0,0,0,0.75);
+    width                : 300px;
+    padding-bottom       : 10px;
+    margin               : -170px 0 0 -150px;
+    position             : absolute;
+    top                  : 50%;
+    left                 : 50%;
+    border-radius        : 5px;
+    h2{
+        text-align : center;
+        color:rgb(39, 187, 39)
+    }
+    img{
+        text-align : center;
+    }
+}
