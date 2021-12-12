@@ -17,7 +17,6 @@ app.use(cors(corsOptions));// Use this after the variable declaration
 
 initWebRoutes(app);
 
-
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
